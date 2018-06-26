@@ -9,7 +9,7 @@ class Solution:
         size=0
         while size < len(nums):
             if target-nums[size] in d:
-                if d[target-nums[size]] < size:
+                # if d[target-nums[size]] < size:
                     return [d[target-nums[size]],size]
             else:
                 d[nums[size]] = size
